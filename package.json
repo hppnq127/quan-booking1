@@ -53,7 +53,6 @@
     "react-dater": "^1.6.0",
     "react-dom": "^17.0.2",
     "react-draft-wysiwyg": "^1.14.7",
-    "react-event-calendar": "^0.3.0",
     "react-infinite-scroller": "^1.2.6",
     "react-inlinesvg": "^2.3.0",
     "react-intl": "^5.20.4",
@@ -109,7 +108,6 @@
     "@types/react-slick": "^0.23.9",
     "@types/react-table": "^7.7.9",
     "nswag": "^13.16.1",
-    "react-query-devtools": "2.6.3",
     "tailwindcss": "^3.0.24",
     "v": "^0.3.0",
     "webpack-cli": "^4.8.0"
