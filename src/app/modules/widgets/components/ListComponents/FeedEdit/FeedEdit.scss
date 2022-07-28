@@ -1,0 +1,168 @@
+.tabs {
+    margin: 40px 30px;
+    border-left: 4px solid #E7E7E7;
+
+    list-style-type: none;
+    width: 100%;
+}
+
+.list-active {
+    height: 60px;
+    color: #E22828;
+    display: flex;
+    align-items: center;
+
+    border-left: 4px solid#E22828;
+    font-size: 16px;
+    padding: 20px;
+    width: 100%;
+    transform: translate(-4px);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.list {
+    height: 60px;
+    color: #616161;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.pags {
+    margin-top: 20px;
+    width: 98.2%;
+    background: #fff;
+    padding: 30px 30px;
+}
+
+.pag-active {
+    width: 100%;
+
+}
+
+.pag {
+    width: 100%;
+    display: none;
+}
+
+.pag-header {
+    color: #03AC84;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.icon-header {
+    font-size: 16px;
+
+
+}
+
+.pag-name {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.remove-feed {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-weight: 600;
+
+    &:hover {
+        opacity: 0.9;
+
+    }
+}
+
+.hide-feed {
+    background-color: #E22828;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: 6px solid #E22828;
+    font-weight: 600;
+
+    &:hover {
+        opacity: 0.9;
+
+    }
+}
+
+.modal-remove {
+    position: absolute;
+    z-index: 100;
+    transform: translateY(-8%);
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #0604046b;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-remove-feed {
+    width: 28%;
+    display: flex;
+    height: 350px;
+    top: 180px;
+    position: relative;
+    flex-direction: column;
+    animation: modalFeed 0.2s ease-in;
+    border-radius: 10px;
+
+}
+
+.modal-f-header {
+    color: #616161;
+    font-size: 14px;
+    font-weight: 700;
+
+
+}
+
+.backFeed {
+    color: #E22828;
+    border: 2px solid#E22828;
+    background-color: #fff;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: 700;
+
+    &:hover {
+        opacity: 0.9;
+
+    }
+}
+
+.hide {
+    background-color: #E22828;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: 6px solid #E22828;
+    font-weight: 600;
+
+    &:hover {
+        opacity: 0.9;
+
+    }
+}
+
+@keyframes modalFeed {
+    from {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

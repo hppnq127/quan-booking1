@@ -1,0 +1,67 @@
+.more-picture{
+    position: relative;
+}
+
+.more-picture::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color: #222222, $alpha: 0.3);
+    border-radius: 0.75rem;
+}
+
+.more-picture span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input-comment{
+    position: relative;
+}
+
+.input-comment::before{
+    content: "";
+    display: block;
+    height: 1.5px;
+    width: 100%;
+    background-color: #E7E7E7;
+    position: absolute;
+    top: -25px;
+}
+
+.comment {
+    position: relative;
+}
+
+.comment::before{
+    content: "";
+    display: block;
+    height: 1.5px;
+    width: 100%;
+    background-color: #E7E7E7;
+    position: absolute;
+    top: -25px;
+}
+
+aside.emoji-picker-react{
+    width: 100% !important;
+}
+
+.drop-file-input:hover,
+.drop-file-input.dragover{
+    opacity: 0.6;
+} 
+
+.post-video:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.post-video:hover .btn-play{
+    opacity: 0.8;
+    cursor: pointer;
+}

@@ -1,0 +1,48 @@
+.editor {
+    font-size: 18px;
+    overflow: auto !important;
+    height: 320px;
+}
+
+.toolbar-editor {
+    z-index: 2;
+    background-color: #f4f4f4;
+}
+
+.editor .rdw-option-active {
+    background-color: black;
+}
+
+.rdw-dropdown-selectedtext span {
+    margin-right: 2rem;
+}
+
+.rdw-inline-wrapper .rdw-option-wrapper {
+    height: 100%;
+}
+
+.rdw-colorpicker-wrapper .rdw-option-wrapper {
+    height: 100%;
+}
+
+.rdw-emoji-wrapper .rdw-option-wrapper {
+    height: 100%;
+}
+
+.rdw-colorpicker-modal-options .rdw-option-wrapper {
+    height: 22px;
+}
+
+.rdw-emoji-modal {
+    width: 211px;
+}
+
+.public-DraftStyleDefault-block {
+    margin: 0;
+}
+
+.DraftEditor-editorContainer,
+.DraftEditor-root,
+.public-DraftEditor-content {
+    height: auto;
+}

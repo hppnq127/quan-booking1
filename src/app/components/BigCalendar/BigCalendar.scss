@@ -1,0 +1,254 @@
+.week-container {
+    display: flex;
+    width: 840px;
+
+
+}
+
+.first-week {
+    border-top: 1px solid #B2B2B2;
+    margin-top: -1px;
+}
+
+.selected {
+    background-color: #E3FAF4;
+}
+
+.before {
+    background-color: #F4F4F4;
+    color: #F4F4F4;
+}
+
+.today {}
+
+.today-num {
+    border: 1px solid red;
+    transform: translate(-2px, -2px);
+    padding: 0px 8px;
+    border-radius: 4px;
+    color: red;
+}
+
+.date-in-week {
+    width: 120px;
+    height: 50px;
+    background-color: #E7E7E7;
+    border-top: 1px solid #B2B2B2;
+    border-right: 1px solid #B2B2B2;
+    border-bottom: 1px solid #B2B2B2;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-calendar {
+
+    display: flex;
+    width: 100%;
+}
+
+.calentar-table {
+    border-left: 1px solid #B2B2B2;
+    margin: 1px;
+}
+
+.month-now {
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.pre-year,
+.next-year {
+    color: #616161;
+    font-size: 14px;
+}
+
+.curr-year {
+    color: #03AC84;
+    font-weight: 700;
+    font-size: 18px;
+    /* animation: zoom 10s ; */
+}
+
+/* @keyframes zoom {
+    from {  font-size: 16px}
+    to{ font-size: 18px }
+} */
+.curr3Year {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50px;
+    height: 100px;
+}
+
+.year-picker {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50px;
+    height: 90%;
+}
+
+.header-calendar {
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.1);
+    width: 421px;
+    display: flex;
+    flex-direction: row;
+    height: 208px;
+    margin-top: 15px;
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    padding: 9px 15px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.header-calendar .month-button {
+    background-color: #fff;
+    width: 88px;
+    height: 32px;
+    margin: 8px 8px;
+    border-radius: 6px;
+    border: 1px solid #444444;
+    color: #444444;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.header-calendar .this-month-button {
+    background-color: #fff;
+    width: 88px;
+    height: 32px;
+    margin: 8px 8px;
+    border-radius: 6px;
+    border: 1px solid #03AC84;
+    color: #03AC84;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.year-month-button {
+    background-color: #fff;
+    width: 219px;
+    height: 43px;
+    margin-top: 30px;
+    border-radius: 6px;
+    border: 1px solid #505050;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.year-month-button .trans {
+    transform: translateY(1px);
+}
+
+.detail-calendar {
+    width: calc(100% - 840px);
+    padding: 0px 5px 0px 30px;
+}
+
+.price-and-term {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.pick-place-button {
+    background-color: #fff;
+    width: 574px;
+    height: 43px;
+    margin-top: 30px;
+    border-radius: 6px;
+    border: 1px solid #505050;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.pick-place-list {
+    border: none;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 6px;
+    margin-top: -10px;
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    padding: 9px 0px;
+    align-items: center;
+    height: 185px;
+}
+
+.text-place {
+    font-size: 16px;
+    color: #000;
+}
+
+.text-place-list {
+    font-size: 14px;
+    color: #000;
+    text-align: start;
+    width: 100%;
+    cursor: pointer;
+    padding: 0 15px;
+
+}
+
+.text-place-list:hover {
+    background-color: #F4F4F4;
+    cursor: pointer;
+}
+
+.before-status {
+    display: none;
+}
+
+.active-status {
+    border: 1px solid #03AC84;
+    background-color: #fff;
+    margin-top: 6px;
+    margin-right: 6px;
+    color: #03AC84;
+    border-radius: 4px;
+    width: 40px;
+}
+
+.expire-status {
+    border: 1px solid #707070;
+    background-color: #fff;
+    margin-top: 6px;
+    margin-right: 6px;
+    color: #707070;
+    border-radius: 4px;
+    width: 40px;
+}
+
+.cancel-status {
+    border: 1px solid #E22828;
+    background-color: #fff;
+    margin-top: 6px;
+    margin-right: 6px;
+    color: #E22828;
+    border-radius: 4px;
+    width: 40px;
+}

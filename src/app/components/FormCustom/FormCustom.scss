@@ -1,0 +1,108 @@
+.formcustom-container {
+    background-color: #fff;
+    // padding: 33px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.1);
+    min-height: 110px;
+    margin-bottom: 1.5%;
+
+}
+
+.formcustom-setting {
+    background-color: #fff;
+    padding: 3px 3px;
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.1);
+    min-height: 110px;
+
+}
+
+.setting-button {
+    border: none;
+    padding: 15px 40px;
+    border-radius: 5px;
+    background-color: red;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.w-22 {
+    width: 22%;
+}
+
+.account-label {
+    position: absolute;
+    background-color: #fff;
+    font-size: 15px;
+    padding: 0px 3px;
+    transform: translate(10px, -11px);
+    color: #616161;
+    z-index: 1;
+}
+
+.account-form {
+    border: 1px solid #B2B2B2;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    padding: 2px
+}
+
+.date-picker1 input {
+    width: 84px;
+    font-size: 14px;
+    border: none;
+    color: #616161;
+    border: none;
+    outline: none;
+}
+
+.account-seperate {
+    padding-right: 4px;
+    transform: translateY(-3px);
+}
+
+.account-select {
+    font-size: 15px;
+    width: 100%;
+    border: none;
+    padding-left: 10px;
+    color: #616161;
+    outline: none;
+
+}
+
+.silder-custom {
+    width: 100%;
+    height: 500px;
+    align-items: center;
+    padding: 0px 10px;
+
+}
+
+.customize-slide {
+    transform: translateY(325px);
+    z-index: 100;
+
+}
+
+.choose-day-custom {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: none;
+    font-size: 15px;
+    color: #616161;
+}

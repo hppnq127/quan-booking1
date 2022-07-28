@@ -1,0 +1,209 @@
+:root {
+    // -------- header -----------
+    --header-height: 8% !important;
+    --header-max-height: 70px!important;
+    --header-text: rgb(0, 0, 0) !important;
+    --header-background-color: rgb(255, 255, 255) !important;
+
+    // ---------- aside -----------
+    --aside-width: 256px !important;
+    --aside-background: rgb(255, 255, 255) !important;
+    --aside-title-color: rgb(0, 0, 0) !important;
+    --aside-title-color-active: rgb(188, 24, 24) !important;
+    --aside-item-drop-background: rgb(236, 236, 236) !important;
+
+    // ------------- content -----------
+    --content-container-background: #ebebeb !important;
+
+    //-----------form custom -----------
+    --formcustom-container-height: 120px !important;
+    --formcustom-container-background: rgb(255, 255, 255) !important;
+    --content-wrap-background: rgb(255, 255, 255) !important;
+
+    //--------- table -----------
+    --border-table-color: rgb(188, 188, 188) !important;
+    --table-header-color: rgb(255, 255, 255) !important;
+    --table-body-color: rgb(255, 255, 255) !important;
+    --table-text-color: rgb(0, 0, 0) !important;
+
+    // ------------ text input ------------ 
+    --text-input-background-color: rgb(232, 232, 232) !important;
+    --text-input-color: rgb(0, 0, 0) !important;
+    --text-input-title-color: rgb(0, 0, 0) !important;
+
+}
+
+// ------------header----------------
+.header {
+    background-color: var(--header-background-color) !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    z-index: 3 !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1) !important;
+    height: var(--header-height) !important;
+    max-height: var(--header-max-height) !important;
+}
+
+.header_logo {
+    margin-left: 74px !important;
+    height: 33px !important;
+    width: 111px !important;
+}
+
+.header_text {
+    font-size: 1.25rem !important;
+    color: var(--header-text) !important;
+}
+
+.header_topbar {
+    margin: 0 13px !important;
+}
+
+.header_topbar_nofi {
+    // height: 100% !important;
+}
+
+.header_topbar_nofi:hover {
+    background-color: #f1faff !important;
+}
+
+.header_topbar_nofi img {
+    height: 60% !important;
+}
+
+.header_topbar_account {
+    height: 30px !important;
+    width: 58px !important;
+}
+
+// ----------aside----------
+.aside {
+    width: var(--aside-width) !important;
+    top: 0px !important;
+    left: 0 !important;
+    z-index: 1 !important;
+    height: 100% !important;
+    position: fixed !important;
+    display: block !important;
+    background-color: var(--aside-background) !important;
+}
+
+.aside_pt {
+    padding: 25px 0 !important;
+}
+
+.aside_item_drop .aside_item_drop-title,
+.aside_item .aside_item_title {
+    color: var(--aside-title-color) !important;
+}
+
+.aside_item_drop .aside_item_drop-title:hover,
+.aside_item .aside_item_title:hover {
+    color: var(--aside-title-color-active) !important;
+}
+
+// --------active aside menu item ----------
+.aside_item_drop.hover.show .aside_item_drop-title,
+.aside_item_drop.here .aside_item_drop-title,
+.aside_item.active .aside_item_title {
+    color: var(--aside-title-color-active) !important;
+}
+
+
+.aside_item_drop.hover.show .aside_item.active,
+.aside_item_drop.here .aside_item.active {
+    background-color: var(--aside-item-drop-background) !important;
+}
+
+.menu-active-custom {
+    width: 100%;
+    border-right: 4px solid #E22828;
+}
+
+// ------------ content ----------
+.content_container {
+    background-color: var(--content-container-background) !important;
+    width: calc(100% - var(--aside-width)) !important;
+    height: 100% !important;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+    position: relative !important;
+}
+
+.wrap-content {
+    background-color: var(--content-wrap-background) !important
+}
+
+.content_mt {
+    height: var(--header-height) !important;
+}
+
+.formcustom-container {
+    background-color: var(--formcustom-container-background) !important;
+    display: flex !important;
+    flex-direction: row !important;
+    // justify-content: space-evenly !important;
+    align-items: center !important;
+
+    width: 100% !important;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.1) !important;
+    min-height: var(--formcustom-container-height) !important;
+    margin-bottom: 1.5% !important;
+}
+
+.pagination-container {
+    width: 100% !important;
+    height: calc(98.5% - var(--formcustom-container-height)) !important;
+    text-align: center !important;
+    display: flex !important;
+
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.1) !important;
+    background-color: var(--content-wrap-background) !important;
+}
+
+// -----------table custom -----------
+.pagination-container table,
+.pagination-container tr,
+.pagination-container thead,
+.pagination-container tbody {
+    border: 2px solid var(--border-table-color) !important;
+}
+
+.table_header {
+    background-color: var(--table-header-color) !important;
+    color: var(--table-text-color) !important;
+}
+
+.pagination-tr {
+    background-color: var(--table-body-color) !important;
+    color: var(--table-text-color) !important;
+}
+
+//  ----------- another -----------  
+
+.formcustom-setting {
+    background-color: var(--content-background-color) !important
+}
+
+.text-input {
+    background-color: var(--text-input-background-color) !important;
+    color: var(--text-input-color) !important;
+}
+
+.text-input-title {
+    background-color: transparent !important;
+    color: var(--text-input-title-color) !important;
+}
+
+.account-form {
+    border: none !important;
+    // height: 50px;
+    // width: 100%;
+    // margin-bottom: 10px;
+    // display: flex;
+    // flex-direction: row;
+    // border-radius: 5px;
+    // padding: 2px
+}

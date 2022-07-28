@@ -1,0 +1,110 @@
+.check-custom {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: '#616161';
+}
+
+/* Hide the browser's default checkbox */
+.check-custom input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.check-custom:hover input~.checkmark-custom {
+  background-color: #ccc;
+  color: '#616161';
+}
+
+/* When the checkbox is checked, add a blue background */
+.check-custom input:checked~.checkmark-custom {
+  background-color: #000;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark-custom:after {
+  content: "";
+  position: absolute;
+  display: none;
+
+}
+
+/* Show the checkmark when checked */
+.check-custom input:checked~.checkmark-custom:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.check-custom .checkmark-custom:after {
+  left: 11px;
+  top: 6px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.warning {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.086);
+}
+
+.warning-content {
+  background: #fff;
+  position: fixed;
+  top: 500px;
+  left: 50%;
+  padding: 15px 30px;
+  transform: translateX(-14%);
+  display: flex;
+  align-items: center;
+  color: #E22828;
+  font-weight: 800;
+  font-size: 14px;
+  border-radius: 5px;
+  animation: show 0.5s ease-in;
+}
+
+
+@keyframes show {
+  from {
+    opacity: 0.6;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hide {
+  from {}
+
+  to {}
+}

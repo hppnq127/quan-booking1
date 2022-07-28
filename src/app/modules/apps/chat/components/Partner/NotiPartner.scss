@@ -1,0 +1,155 @@
+.header-label{
+    font-size: 14px;
+    color: #828282;   
+    width: 40%;
+}
+.header-item{
+    width: 240px;
+    display: flex;
+    padding: 3px 0;
+    font-size: 14px;
+}
+.body{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width:740px;
+    padding: 18px 30px;
+    margin: 8px 0;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.1);
+}
+.noti-type-header{
+    display: flex ;
+    align-items: center;
+    margin-top: 20px;
+}
+.noti-type-name-sale{
+    color: #FF9900;
+    font-size: 18px;
+    margin-left: 15px;
+    font-weight: 600;
+}
+.noti-type-name-event{
+    color: #A752EA;
+    font-size: 18px;
+    margin-left: 15px;
+    font-weight: 600;
+}
+.noti-type-name-term{
+    color: #48A627;
+    font-size: 18px;
+    margin-left: 15px;
+    font-weight: 600;
+}
+.noti-type-title{
+    color: #616161;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
+.noti-type-time{
+    font-size: 16px;
+    color: #828282;
+}
+.noti-type-content{
+    font-size: 16px;
+}
+.noti-type-pic{
+    width: 566px;
+    height: 392px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.name-sendto{
+    font-size: 16px;
+    color: #3F3F3F;
+}
+.number-sendto{
+    font-size: 14px;
+    color: #828282;
+}
+.more-detail{
+    font-size: 14px;
+    color: #03AC84;
+    font-weight: 600;
+    margin-right: 13px;
+   
+}
+.button-detail{
+    border: none;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     
+}
+.cancel-noti{
+   
+    color: #828282;
+    border: 2px solid  #828282 ;
+    background-color: #fff; 
+    font-size: 14px;
+    font-weight: 700;
+    padding: 8px 40px ;
+    border-radius: 6px;
+}
+.modal-content-canel{
+    font: 14px;
+    color: #616161;
+    font-weight: 700
+}
+.modal-button-canel{
+    margin-top: 50px;
+   font-size: 12px;
+   font-weight: 700;
+    text-align: end;
+    border: 2px solid #03AC84;
+    background-color: #fff;
+    color: #03AC84;
+    padding: 10px 25px;
+    border-radius: 5px
+}
+
+.cancel{
+    margin-top: 50px;
+    font-size: 12px;
+    font-weight: 700;
+     text-align: end;
+     border: 2px solid #707070;
+     background-color: #fff;
+     color: #707070;
+     padding: 10px 25px;
+     border-radius: 5px;
+}
+.lds-circle {
+    display: inline-block;
+    transform: translateZ(1px);
+  }
+  .lds-circle > div {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    background: rgb(255, 205, 204);
+    animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+  @keyframes lds-circle {
+    0%, 100% {
+      animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+    }
+    0% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      transform: rotateY(1800deg);
+      animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+    }
+    100% {
+      transform: rotateY(3600deg);
+    }
+  }

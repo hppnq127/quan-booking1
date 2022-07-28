@@ -1,0 +1,85 @@
+webpackHotUpdate("main",{
+
+/***/ "./src/components/chatList/ChatListItems.js":
+/*!**************************************************!*\
+  !*** ./src/components/chatList/ChatListItems.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ChatListItems; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Avatar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Avatar */ "./src/components/chatList/Avatar.js");
+var _jsxFileName = "C:\\Users\\mylif\\Desktop\\WEB\\Git_Hub_Clone\\chat-ui\\src\\components\\chatList\\ChatListItems.js";
+
+
+class ChatListItems extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  constructor(props) {
+    super(props);
+
+    this.selectChat = e => {
+      for (let index = 0; index < e.currentTarget.parentNode.children.length; index++) {
+        e.currentTarget.parentNode.children[index].classList.remove("active");
+      }
+
+      e.currentTarget.classList.add("active");
+    };
+  }
+
+  render() {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      style: {
+        animationDelay: `0.${this.props.animationDelay}s`
+      },
+      onClick: this.selectChat,
+      className: `chatlist__item ${this.props.active ? this.props.active : ""} `,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21,
+        columnNumber: 7
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Avatar__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      image: this.props.image ? this.props.image : "http://placehold.it/80x80",
+      isOnline: this.props.isOnline,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 9
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "userMeta",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 35,
+        columnNumber: 9
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 36,
+        columnNumber: 11
+      }
+    }, this.props.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      className: "activeTime",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 37,
+        columnNumber: 11
+      }
+    }, "32 mins ago")));
+  }
+
+}
+
+/***/ })
+
+})
+//# sourceMappingURL=main.b88d01b62188cbb1278c.hot-update.js.map

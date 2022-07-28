@@ -1,0 +1,74 @@
+.list{
+    width: 100%;
+    padding: 10px 6px;
+    font-size: 14px;
+    color:  #585050;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    &:hover{
+       background-color: #1ebfff18; 
+    }
+}
+.button-setting{
+    cursor: pointer;
+    color: #1ebfff;
+    margin-left: 10px;  
+}
+.add-text{
+    font-size: 14px;
+    font-weight: 600;
+}
+.add-button{
+    border: none;
+    border: 1px solid  #151212;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+.input-setting{
+    border: none;
+    border: 3.5px solid  #1ebfff;
+    border-radius: 5px;
+    font-size: 14px;
+    height: 42.5px;
+    padding-left: 10px;
+}
+.add-confirm{
+    border: none;
+    border: 3px solid #1ebfff;
+    margin-left: 10px;
+    color: #1ebfff;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #fff;
+    padding: 6px 10px;
+    border-radius: 3px;
+    &:hover{
+        background-color: #1ebfff;
+        color: #fff;
+        
+    }
+    width: 180px;
+    
+}
+.confirmList{
+    border: none;
+    border: 3px solid #ff1e1e;
+    margin-left: 10px;
+    color: #ff1e1e;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #fff;
+    padding: 6px 10px;
+    border-radius: 3px;
+    &:hover{
+        background-color: #ff1e1e;
+        color: #fff;
+        
+    }
+    width: 100px;
+}
+.modal-body input:focus{
+    outline: #1ebfff;
+}

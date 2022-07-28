@@ -1,0 +1,29 @@
+.dropdown-heading {
+    display: none !important;
+    color: transparent;
+}
+
+.rmsc {
+    --rmsc-main: white;
+    --rmsc-selected: #e3faf4;
+}
+
+.rmsc .dropdown-container {
+    border: none;
+}
+
+.rmsc .dropdown-container:focus {
+    outline: none;
+}
+
+.item-renderer {
+    align-items: center !important;
+}
+
+.rmsc .options {
+    max-height: 335px;
+}
+
+.rmsc .dropdown-content .panel-content {
+    box-shadow: none;
+}

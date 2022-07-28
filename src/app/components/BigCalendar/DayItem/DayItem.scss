@@ -1,0 +1,15 @@
+.day{
+    width: 120px;
+    height: 120px;
+    border-bottom: 1px solid #B2B2B2;
+    border-right: 1px solid #B2B2B2;
+    position: relative;
+    .day-number{
+        position: absolute;
+        top:8px;
+        left: 7px;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

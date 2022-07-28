@@ -1,0 +1,11 @@
+//
+// Footer
+// 
+
+.footer {
+    background-color: get($footer-config, bg-color);
+}
+
+.rt-tr-group:nth-of-type(even){
+    background: red;
+}
